@@ -190,3 +190,14 @@ If you had to buy shares in the company on one day, and sell the shares on one o
 write an algorithm to work out what the maximum profit you could make would be.
 */
 //I really know absolutely nothing about this topic, and am not sure if my solution is even going to be right.
+
+arr = [128, 97, 121, 123, 98, 97, 105]
+
+function maxProfit(arr) {
+    arr = arr.sort((a,b) => a-b)
+    min = arr[0]
+    max = arr[arr.length-1]
+    console.log(`Ideal profit: ${max-min}`)
+}
+
+maxProfit(arr)
